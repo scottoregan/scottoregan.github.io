@@ -1,1 +1,290 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scott O'Regan | A Little Corner of the Internet</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f4f1eb;
+      color: #252720;
+      font-family: Georgia, serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 8%;
+      font-family: Arial, sans-serif;
+      border-bottom: 1px solid #dedbd4;
+    }
+
+    nav .logo {
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #252720;
+      text-decoration: none;
+      font-size: 13px;
+      margin-left: 24px;
+    }
+
+    .hero {
+      padding: 100px 8% 80px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: #77776d;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 100px);
+      font-weight: normal;
+      line-height: 1.05;
+      letter-spacing: -4px;
+      max-width: 850px;
+    }
+
+    h1 em {
+      color: #8c765a;
+    }
+
+    .intro {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #68685f;
+      max-width: 480px;
+      margin-top: 35px;
+    }
+
+    .hero-image {
+      margin-top: 65px;
+      width: 100%;
+      height: 400px;
+      background:
+        linear-gradient(135deg, #c9bba4, #8d9384, #4e5b50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f4f1eb;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    section {
+      padding: 80px 8%;
+      border-top: 1px solid #dedbd4;
+    }
+
+    .section-label {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #77776d;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 5vw, 55px);
+      font-weight: normal;
+      line-height: 1.2;
+      max-width: 700px;
+    }
+
+    .section-text {
+      font-family: Arial, sans-serif;
+      color: #68685f;
+      line-height: 1.9;
+      max-width: 600px;
+      margin-top: 25px;
+      font-size: 15px;
+    }
+
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .interest {
+      border-top: 1px solid #bdb9af;
+      padding-top: 20px;
+    }
+
+    .interest h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .interest p {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #68685f;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 35px 8%;
+      display: flex;
+      justify-content: space-between;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #77776d;
+      border-top: 1px solid #dedbd4;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 22px 6%;
+      }
+
+      nav a {
+        margin-left: 12px;
+      }
+
+      .hero {
+        padding: 75px 6% 60px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero-image {
+        height: 260px;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+
+      .interests {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        padding: 30px 6%;
+        gap: 20px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">SCOTT O'REGAN</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="eyebrow">Nova Scotia, Canada</div>
+
+    <h1>
+      A little corner<br>
+      of the internet.<br>
+      <em>All mine.</em>
+    </h1>
+
+    <p class="intro">
+      Just a place for a few thoughts, photographs,
+      interests and whatever else happens to find its way here.
+      No particular agenda.
+    </p>
+
+    <div class="hero-image">
+      Your photograph goes here
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="section-label">01 / A little about me</div>
+
+    <h2>
+      Still figuring things out.
+      Enjoying the process.
+    </h2>
+
+    <p class="section-text">
+      Somewhere in my forties, I decided having my own
+      little website sounded like a good idea.
+      So here we are.
+
+      A collection of things I enjoy, places I've been,
+      things I've learned and probably a few things
+      that aren't particularly important to anyone else.
+
+      That's kind of the point.
+    </p>
+  </section>
+
+  <section id="interests">
+    <div class="section-label">02 / Things I enjoy</div>
+
+    <h2>A few things that keep life interesting.</h2>
+
+    <div class="interests">
+      <div class="interest">
+        <h3>Golf</h3>
+        <p>
+          Chasing a lower handicap and occasionally
+          remembering how to putt.
+        </p>
+      </div>
+
+      <div class="interest">
+        <h3>Photography</h3>
+        <p>
+          Trying to capture something worth
+          looking at. Usually involving good light.
+        </p>
+      </div>
+
+      <div class="interest">
+        <h3>The Good Stuff</h3>
+        <p>
+          Good movies, good conversations,
+          new places and the occasional
+          unnecessary rabbit hole.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Scott O'Regan</div>
+    <div>Made for no particular reason.</div>
+  </footer>
+
+</body>
+</html>
+
